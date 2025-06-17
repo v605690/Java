@@ -1,4 +1,4 @@
-# 🐍 Python + SQL + APIs: 9-Week Summer Session Training
+# CodingNomads 9-Week Java Summer Session
 
 ## Overview
 
