@@ -212,6 +212,7 @@ switch (day) {
 * Learned type casting and Scanner input.
 * Learned how to use Java’s operators and conditional logic.
 * Built confidence with foundational Java tools.
+* Push to GitHub every single day you write a line of code
 
 ---
 
