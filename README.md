@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to your official course repository for the **Python + SQL + APIs Intensive**, hosted by CodingNomads. This repo contains all the files and resources you’ll need during the 9-week program — including:
+Welcome to your official course repository for the **Java Summer Session**, hosted by CodingNomads. This repo contains all the files and resources you’ll need during the 9-week program — including:
 
 ✅ Lecture notes  
 
@@ -12,68 +12,38 @@ Welcome to your official course repository for the **Python + SQL + APIs Intensi
 
 ✅ Capstone guidance 
 
-## Topics Covered
+## Ready to Rock Checklist
 
-### Week 1: Introduction to Java
-- Java fundamentals and syntax
-- Variables, data types, and operators
-- Control flow statements
-- Basic input/output operations
+* [ ] Joined [CodingNomads' Discord server](https://codingnomads.com/discord)
+* [ ] Connected with Ryan and mentor on Discord
+* [ ] 1-on-1 meeting schedule locked in with mentor
+* [ ] Java 17+ installed
+* [ ] IntelliJ installed
+* [ ] [Java labs](https://github.com/CodingNomads/online-java-fundamentals) cloned or downloaded
+* [ ] Java labs opened as project in IntelliJ
+* [ ] Read [How to Develop a Growth Mindset for Learning](https://codingnomads.com/blog/how-to-develop-a-growth-mindset-for-learning)
+* [ ] GitHub account created
 
-### Week 2: Object-Oriented Programming
-- Classes and objects
-- Inheritance and polymorphism
-- Encapsulation and abstraction
-- Interfaces and abstract classes
+## Weekly Breakdown
 
-### Week 3: Advanced OOP and Collections
-- Advanced OOP concepts
-- Java Collections Framework
-- Lists, Sets, and Maps
-- Generics and type parameters
-
-### Week 4: Exception Handling and I/O
-- Exception handling mechanisms
-- File I/O operations
-- Streams and serialization
-- Best practices for error handling
-
-### Week 5: Multithreading and Concurrency
-- Thread creation and management
-- Synchronization and locks
-- Concurrent collections
-- Thread safety and best practices
-
-### Week 6: Database Programming
-- JDBC fundamentals
-- Database connections and queries
-- Prepared statements
-- Transaction management
-
-### Week 7: Web Development Basics
-- HTTP and web protocols
-- Servlets and JSP
-- Web application architecture
-- Basic frontend integration
-
-### Week 8: Spring Framework
-- Spring Core concepts
-- Dependency Injection
-- Spring Boot basics
-- RESTful web services
-
-### Week 9: Final Project and Career Preparation
-- Project development
-- Code review and optimization
-- Testing and deployment
-- Career development and next steps
+| Week | Topics                                                     |
+| ---- | ---------------------------------------------------------- |
+| 1    | Setup, Basics, Primitive Data Types & Variables           |
+| 2    | Operators, Conditionals, Logic, Loops, Arrays, ArrayLists          |
+| 3    | Java Methods, Classes & Objects              |
+| 4    | Core Object-Oriented Programming (OOP) Concepts    |
+| 5    | Static, Packages, and Project Modularity          |
+| 6    | Exception Handling, File I/O, & Generics |
+| 7    | Multithreading & Functional Java             |
+| 8    | Database Integration (JDBC + SQL CRUD)               |
+| 9    | Data Structures, Algorithms & Capstone Planning       |
 
 ## Getting Started
 
 ### Prerequisites
 - Java Development Kit (JDK) 17 or later
 - Integrated Development Environment (IDE) - IntelliJ IDEA recommended
-- Git for version control
+- Git for version control (recommended)
 
 ### Installation
 1. Clone the repository:
@@ -83,7 +53,6 @@ Welcome to your official course repository for the **Python + SQL + APIs Intensi
 2. Set up your development environment:
    - Install JDK 17 or later
    - Configure your IDE
-   - Set up Maven/Gradle
 
 ## Learning Resources
 
@@ -119,7 +88,6 @@ Welcome to your official course repository for the **Python + SQL + APIs Intensi
 Happy coding, and welcome to the world of Java!
 
 – The CodingNomads Team
-
 
 ---
 
