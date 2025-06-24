@@ -157,25 +157,25 @@ switch (day) {
 ## Quiz Questions
 
 1. **What is the correct entry point for a Java program?**
-
+Main method
 2. **What command is used to print output in Java?**
-
+System.out.println();
 3. **What is the size of an `int` in Java?**
-
+32 bits
 4. **What are four common primitive data types in Java?**
-
+Boolean, int, long, char, byte, short, float, double
 5. **What is type casting in Java?**
-
+going from one data type to another 
 6. **What are the arithmetic operators in Java?**
-
++, -, /, *, %
 7. **What is the result of casting `double d = 9.8; int i = (int) d;`?**
-
+9
 8. **Which class do we use to get user input from the console?**
-
+Scanner class
 9. **What is the difference between == and = in Java?**
-
+== Equality operator, = Assignment operator
 10. **What does `System.out.println(5 > 3 && 2 < 1);` print?**
-
+will not compile since both have to be true
 ---
 
 ## Coding Challenges
@@ -184,17 +184,49 @@ switch (day) {
 
 1. **Number Comparison**
    Ask the user to enter two numbers. Print which number is greater or if they are equal.
+```java 
+int num1 = 21; 
+int num2 = 17; 
 
+if (num1 >= num2) {
+    System.out.println("num1 is the larger number");
+} else {
+    System.out.println("num2 is small number")
+}
+```
 2. **Basic Calculator**
    Write a program that adds two integers and prints the result.
    *Stretch:* Use `Scanner` to allow user input.
 
 3. **Data Types Practice**
    Declare variables of each primitive type and print them.
-
+```java
+int number = 12;
+System.out.println(number);
+long longNumber = 123456434342L;
+System.out.println(longNumber);
+byte byteNumber = 127;
+System.out.println(byteNumber);
+short shortNumber = 23;
+System.out.println(shortNumber);
+boolean result = true;
+System.out.println(result);
+char character = 'p';
+System.out.println(character);
+float floatNumber = 1.33F;
+System.out.println(floatNumber);
+double doubleNumber = 29.99;
+System.out.println(doubleNumber);
+```
 4. **Type Casting Demo**
    Demonstrate implicit and explicit casting between `int` and `double`.
+```java
+int n = 11;
+double d = n;
 
+double nd = 10.2;
+int ni = (int)nd;
+```
 5. **Grade Categorizer**
    Ask the user for a numeric score and print the letter grade using `if-else`.
 
