@@ -197,7 +197,15 @@ if (num1 >= num2) {
 2. **Basic Calculator**
    Write a program that adds two integers and prints the result.
    *Stretch:* Use `Scanner` to allow user input.
-
+```java
+Scanner scan = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int num1 = scan.nextInt();
+        System.out.println("Enter a number: ");
+        int num2 = scan.nextInt();
+        int sum = num1 + num2;
+        System.out.println("sum is " + sum);
+```
 3. **Data Types Practice**
    Declare variables of each primitive type and print them.
 ```java
@@ -233,6 +241,11 @@ int ni = (int)nd;
 6. **Character Math**
    Assign a `char` variable, cast it to an `int`, and print both.
    *Stretch:* Try adding 1 to the char and print the result.
+```java
+char c = 'p';
+int n = (int) c + 1;
+System.out.println("n is " + n);
+```
 
 ---
 
