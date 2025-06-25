@@ -237,7 +237,30 @@ int ni = (int)nd;
 ```
 5. **Grade Categorizer**
    Ask the user for a numeric score and print the letter grade using `if-else`.
+```java
+class Scratch {
+    public static void main(String[] args) {
+        Scanner scan =new Scanner(System.in);
 
+        System.out.println("Enter score");
+        int score = scan.nextInt();
+
+        char grade;
+
+        if (score >= 90) {
+            System.out.println(grade = 'A');
+        }  else if (score >= 80) {
+            System.out.println(grade = 'B');
+        }   else if (score >= 70) {
+            System.out.println(grade = 'C');
+        }   else if (score >= 60) {
+            System.out.println(grade = 'D');
+        } else  {
+            System.out.println(grade = 'E');
+        }
+    }
+}
+```
 6. **Character Math**
    Assign a `char` variable, cast it to an `int`, and print both.
    *Stretch:* Try adding 1 to the char and print the result.
