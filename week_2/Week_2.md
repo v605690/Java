@@ -98,16 +98,86 @@ System.out.println(list.size());  // 1
 
 1. **Number Comparison**
    Ask the user to enter two numbers. Print which number is greater or if they are equal.
+```java
+public class NumberComparison {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in); 
 
+        System.out.print("Enter the first number: "); 
+        int number1 = input.nextInt(); 
+
+        System.out.print("Enter the second number: ");
+        int number2 = input.nextInt();
+
+        if (number1 > number2) {
+            System.out.println(number1 + " is greater than " + number2);
+        } else if (number2 > number1) {
+            System.out.println(number2 + " is greater than " + number1);
+        } else {
+            System.out.println("Both numbers are equal.");
+        }
+
+        input.close();
+    }
+}
+```
 2. **Even or Odd Loop**
    Print whether each number from 1 to 20 is even or odd using a `for` loop.
-
+```java
+public class EvenOddChecker {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 20; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i + " is even.");
+            } else {
+                System.out.println(i + " is odd.");
+            }
+        }
+    }
+}
+```
 3. **Sum of Array**
    Create an array of integers and print the total sum.
+```java
+public class ArraySum {
 
+    public static void main(String[] args) {
+        
+        int[] numbers = {10, 20, 30, 40, 50};
+        
+        int sum = 0;
+        
+        for (int number : numbers) {
+            sum += number; 
+        }
+        
+        System.out.println("The total sum of the array elements is: " + sum);
+    }
+}
+```
 4. **Favorite Foods List**
    Create an `ArrayList<String>` to store three of your favorite foods. Print them out one per line.
 
+```java
+import java.util.ArrayList;
+
+class Scratch {
+
+    ArrayList<String> favFoods = new ArrayList<>();
+
+    public static void main(String[] args) {
+        Scratch s = new Scratch();
+
+        s.favFoods.add("Pizza");
+        s.favFoods.add("Pasta");
+        s.favFoods.add("Catfish PoBoy");
+
+        for (String f : s.favFoods) {
+            System.out.println(f);
+        }
+    }
+}
+```
 5. **FizzBuzz**
    Print numbers 1 through 30. For multiples of 3, print "Fizz"; for 5, print "Buzz"; for both, print "FizzBuzz".
 
