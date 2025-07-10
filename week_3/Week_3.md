@@ -237,10 +237,10 @@ class Scratch {
    }
 
     public static void main(String[] args) {
-        Scratch o = new Scratch();
+        Scratch ovld = new Scratch();
 
-        System.out.println(o.describe("Jim"));
-        System.out.println(o.describe(17));
+        System.out.println(ovld.describe("Jim"));
+        System.out.println(ovld.describe(17));
     }
 }
 ```

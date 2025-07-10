@@ -133,33 +133,120 @@ public class Manager extends Employee {
 ## Quiz Questions
 
 1. **What is encapsulation?**
-
+Encapsulation means that a class acts as a container, holding both its data members (fields/variables) and the methods that manipulate those data members.
+A crucial aspect of encapsulation is making the data members of a class private
 2. **What does `extends` mean in a class declaration?**
-
+Is a keyword primarily used to establish an inheritance relationship between two classes or interfaces.
 3. **What is method overriding?**
-
+Subclass provides a specific implementation of a method already defined in its superclass. 
+This specific implementation replaces the default behavior inherited from the superclass.
 4. **What is an abstract class?**
-
+Is a class declared with the abstract keyword. It serves as a blueprint for other classes, 
+defining common behaviors and characteristics that can be shared among multiple related classes
 5. **How do you call a superclass constructor?**
-
+A superclass constructor is called from a subclass constructor using the super() keyword. 
+This call must be the first statement within the subclass constructor.
 6. **What’s the difference between `this` and `super`?**
-
+this refers to the current instance
+super refers to the parent class
 ---
 
 ## Coding Challenges
 
 1. **Encapsulated Student**
    Create a `Student` class with `name` and `gpa` as private fields. Provide public getter and setter methods.
+```java
+class Student {
+   private String name;
+   private int gpa;
 
+   public String getName() {
+      return name;
+   }
+
+   public void setName(String name) {
+      this.name = name;
+   }
+
+   public int getGpa() {
+      return gpa;
+   }
+
+   public void setGpa(int gpa) {
+      this.gpa = gpa;
+   }
+}
+```
 2. **Inheritance Practice**
    Create a base class `Vehicle` with a method `move()`. Derive a `Car` class that adds a `drive()` method.
+```java
+class Vehicle {
+    public void move() {
+        System.out.println("We are moving...");
+    }
+}
 
+class Car extends Vehicle {
+    public void drive() {
+        System.out.println("Finally, we are driving to our new place....");
+    }
+
+    public static void main(String[] args) {
+
+        Car car = new Car();
+
+        car.move();
+        car.drive();
+
+    }
+}
+```
 3. **Method Overriding**
    Create a superclass `Employee` with a `work()` method. Subclass `Developer` overrides `work()` with a different message.
+```java
+class Employee {
+    public void work() {
+        System.out.println("Perform work operation");
+    }
+}
 
+class Developer extends Employee {
+    @Override
+    public void work() {
+        System.out.println("Develop a Java e-commerce app");
+    }
+
+    public static void main(String[] args) {
+        Employee employee = new Developer();
+        employee.work();
+    }
+}
+```
 4. **Abstract Shape**
    Create an abstract class `Shape` with an abstract method `area()`. Implement it in a `Rectangle` subclass.
+```java
+class Rectangle extends Shape {
+   double length;
+   double width;
 
+   public Rectangle(double length, double width) {
+      this.length = length;
+      this.width = width;
+   }
+
+   @Override
+   public double area() {
+      return length * width;
+   }
+
+   public static void main(String[] args) {
+
+      Rectangle rectangle = new Rectangle(33, 13);
+      double r = rectangle.area();
+      System.out.println(r);
+   }
+}
+```
 5. **Constructor Chaining**
    Create a class hierarchy `Person -> Student` where the `Student` constructor calls the `Person` constructor.
 
