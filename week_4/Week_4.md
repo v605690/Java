@@ -133,11 +133,12 @@ public class Manager extends Employee {
 ## Quiz Questions
 
 1. **What is encapsulation?**
-Encapsulation means that a class acts as a container, holding both its data members (fields/variables) and the methods that manipulate those data members.
-A crucial aspect of encapsulation is making the data members of a class private
+Encapsulation means that a class acts as a container, holding both its data members (fields/variables) 
+and the methods that manipulate those data members. A crucial aspect of encapsulation is making the data members of a 
+class private
 2. **What does `extends` mean in a class declaration?**
 Is a keyword primarily used to establish an inheritance relationship between two classes or interfaces.
-3. **What is method overriding?**
+3. **What is method overriding?** 
 Subclass provides a specific implementation of a method already defined in its superclass. 
 This specific implementation replaces the default behavior inherited from the superclass.
 4. **What is an abstract class?**
