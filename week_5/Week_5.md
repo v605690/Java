@@ -118,7 +118,13 @@ and initialization logic that applies to the class as a whole.
 No, a static method in Java cannot directly access instance variables of the class it belongs to; can access 
 through object reference.
 3. **What is the purpose of using packages?**
-Allows to organize code, avoid naming conflicts, control access, promote code reusability, improve maintainability.
+Allows organizing code, avoid naming conflicts, control access, promote code reusability, 
+improve maintainability.
+- public -
+- private - 
+- protected -  
+- default - no access modifier provided
+
 4. **Which statement is correct?**
    a) `object.staticMethod()`
    b) `ClassName.staticMethod()` - B
@@ -141,7 +147,7 @@ class MathUtil {
     }
     public static void main(String[] args) {
         int num = 4;
-        int result = Scratch.cube(num);
+        int result = MathUtil.cube(num);
         System.out.println(result);
     }
 }

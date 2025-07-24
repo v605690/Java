@@ -226,26 +226,29 @@ class Developer extends Employee {
 4. **Abstract Shape**
    Create an abstract class `Shape` with an abstract method `area()`. Implement it in a `Rectangle` subclass.
 ```java
+abstract class Shape {
+    abstract double area();
+}
+
 class Rectangle extends Shape {
-   double length;
-   double width;
+    private double width;
+    private double height;
 
-   public Rectangle(double length, double width) {
-      this.length = length;
-      this.width = width;
-   }
+    public Rectangle(double width, double height) {
+        this.width = width;
+        this.height = height;
+    }
 
-   @Override
-   public double area() {
-      return length * width;
-   }
+    @Override
+    double area() {
+        return width * height;
+    }
+    public static void main(String[] args) {
 
-   public static void main(String[] args) {
-
-      Rectangle rectangle = new Rectangle(33, 13);
-      double r = rectangle.area();
-      System.out.println(r);
-   }
+        Rectangle rectangle = new Rectangle(3, 3);
+        double r = rectangle.area();
+        System.out.println(r);
+    }
 }
 ```
 5. **Constructor Chaining**
